@@ -1,5 +1,21 @@
-//TrigPin to Pin 12
-//EchoPin to Pin 13
+
+//DESCRIPTION
+//
+//A Patrol Robot -- Feel free to hack this code!
+
+//WIRING
+//
+//Ultrasonic was connected with
+//vcc     -> 5v
+//trigPin -> digital 12
+//echoPin -> digital 13
+//Gnd     -> gnd
+//
+//Servos pwm wire (the white or yellow wire) connects to digital pins 5 and 6 (if the robot rolls backwards, simply swap the 5 and 6 wires).
+//Servos' red wires  -> 5v
+//Servos' black or brown wire -> GND
+
+
 
 #include <Servo.h>
 int trigPin = 12;
@@ -43,11 +59,11 @@ void loop()
   Serial.println(time_until_wall);
 }
 
-
+//Movement functions
 void goForward()
 {
-    LeftW.write(120);
-    RightW.write(60);
+    LeftW.write(120); // change this to 180 for full speed
+    RightW.write(60); // change this to 0 for full speed
 }
 
 void goBackward()
@@ -56,6 +72,8 @@ void goBackward()
     RightW.write(120);
 }
 
+
+//Ultrasonic code
 long getDistance()
 {
   delay(10);
