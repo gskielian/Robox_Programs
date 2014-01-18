@@ -1,4 +1,4 @@
-Robox_Programs
+Robox Programs
 ==============
 
 A Collection of Programs for the Robox, feel free to fork this repository and hack away : ) 
@@ -11,5 +11,5 @@ A Collection of Programs for the Robox, feel free to fork this repository and ha
 
 ### Patrol Robot (Pat-Robot)
 
-<a href="http://youtu.be/IaN0m7zzhQE"></a>
+<a href="http://youtu.be/IaN0m7zzhQE"><img src="./img/Pat-Robot.jpg" alt="patrolling robot"/></a>
 
